@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Sophie Bluel - Architecte d'intérieur</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+	<meta name="description" content="">
+	<script src="https://kit.fontawesome.com/85685c362b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="ribbon_location">
+
+</div>
+<header>
+	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+	<nav>
+		<ul>
+			<li><a href="#portfolio">projets</a></li>
+			<li><a href="#contact">contact</a></li>
+			<li><a href="login.html">login</a></li>
+			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<section id="introduction">
+		<figure>
+			<img src="./assets/images/sophie-bluel.png" alt="">
+			<div id="image_edit_location">
+				
+			</div>
+		</figure>
+		<article>
+			<h2>Designer d'espace</h2>
+			<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
+			<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
+			<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
+		</article>
+	</section>
+	<section id="portfolio">
+		<div id="project_edit_location">
+			<h2>Mes Projets</h2>
+		</div>
+		<div id="filter_box">
+			
+		</div>
+		<div class="gallery">
+
+		</div>
+	</section>
+
+	<aside id="modal" class="closed" style="display: none;">
+		<div class="modal_wrapper js_modal_stop">
+			<button id="js_modal_close"><i class="fa-solid fa-xmark"></i></button>
+			<button id="js_modal_return" style="display: none;"><i class="fa-solid fa-arrow-left"></i></button>
+
+			<div id="photo_gallery_page">
+				<h2>Galerie photo</h2>
+				<div class="gallery">
+				
+				</div>
+				<hr>
+				<div id="gallery_options_container">
+					<input type="submit" id="to_add_photo_page" value="Ajouter une photo">
+					<a href="#">Supprimer la galerie</a>
+				</div>
+			</div>
+
+			<div id="add_photo_page" style="display: none;">
+				<h2>Ajouter une photo</h2>
+				<div id="photo_visualizer">
+					<div id="photo_visualizer_text">
+						<i class="fa-solid fa-image"></i>
+						<input type="file" accept=".jpg,.png" id="add_photo_button">
+						<label for="add_photo_button">+ Ajouter photo</label>
+						<p>jpg, png : 4mo max</p>
+					</div>
+					<div id="photo_visualizer_img" style="display: none;">
+						<figure>
+							<img id="chosen_image" src="">
+						</figure>
+					</div>
+				</div>
+				<form action="#" method="post">
+					<label for="title">Titre</label>
+					<input type="text" name="title" id="title">
+					<label for="category">Catégorie</label>
+					<select type="text" name="category" id="category">
+
+					</select>
+				</form>
+				<hr>
+				<input type="submit" id="validate_post_work" value="Valider">
+			</div>
+		</div>
+	</aside>
+
+	<section id="contact">
+		<h2>Contact</h2>
+		<p>Vous avez un projet ? Discutons-en !</p>
+		<form action="#" method="post">
+			<label for="name">Nom</label>
+			<input type="text" name="name" id="name">
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email">
+			<label for="message">Message</label>
+			<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			<input type="submit" value="Envoyer">
+		</form>
+	</section>
+</main>
+
+<footer>
+	<ul>
+		<li class="ocr">Jérémy</li>
+		<li class="ocr">Arthur</li>
+		<li class="ocr">Paul</li>
+		<li class="ocr">Jean</li>
+	</ul>
+	<nav>
+		<ul>
+			<li>Mentions Légales</li>
+		</ul>
+	</nav>
+</footer>
+<script type="text/javascript" src="script_index.js"></script>
+</body>
+</html>
